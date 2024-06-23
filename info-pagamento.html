@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JFK Turismo</title>
+    <link rel="stylesheet" href="info-pagamento.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">JFK</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./login.html">Minha Conta</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pacotes
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./info-pacote-2.html">Chicago</a></li>
+                                <li><a class="dropdown-item" href="./info-pacote.html">Bélgica</a></li>
+                                <li><a class="dropdown-item" href="./info-pacote-3.html">Londres</a></li>
+                                <li><a class="dropdown-item" href="./info-pacote-4.html">Alemanha</a></li>
+                                <li><a class="dropdown-item" href="./info-pacote-5.html">New York</a></li>
+                                <li><a class="dropdown-item" href="./info-pacote-6.html">Paris</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <a href="./login.html"><button class="btn btn-outline-success"
+                                type="button">Entrar/Cadastrar</button></a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container mt-5">
+            <h1>Informações de Pagamento</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Dados do Pedido</h3>
+                            <p class="card-text mt-3"><strong>Pacote Escolhido:</strong> Pacote Exemplo</p>
+                            <p class="card-text"><strong>Valor do Pacote:</strong> R$ 5000,00</p>
+                            <p class="card-text"><strong>Forma de Pagamento:</strong> Cartão de Crédito</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Dados de Pagamento</h3>
+                            <form class="mt-3">
+                                <div class="form-group mb-3">
+                                    <label for="endereco">Endereço</label>
+                                    <input type="text" class="form-control" id="endereco" required>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label for="cidade">Cidade</label>
+                                    <input type="text" class="form-control" id="cidade" required>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label for="estado">Estado</label>
+                                    <select class="form-select" id="estado" required>
+                                        <option value="">Selecione o Estado</option>
+                                        <option value="AC">Acre</option>
+                                        <option value="AL">Alagoas</option>
+                                        <option value="AP">Amapá</option>
+                                        <option value="AM">Amazonas</option>
+                                        <option value="BA">Bahia</option>
+                                        <option value="CE">Ceará</option>
+                                        <option value="DF">Distrito Federal</option>
+                                        <option value="ES">Espírito Santo</option>
+                                        <option value="GO">Goiás</option>
+                                        <option value="MA">Maranhão</option>
+                                        <option value="MT">Mato Grosso</option>
+                                        <option value="MS">Mato Grosso do Sul</option>
+                                        <option value="MG">Minas Gerais</option>
+                                        <option value="PA">Pará</option>
+                                        <option value="PB">Paraíba</option>
+                                        <option value="PR">Paraná</option>
+                                        <option value="PE">Pernambuco</option>
+                                        <option value="PI">Piauí</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="RN">Rio Grande do Norte</option>
+                                        <option value="RS">Rio Grande do Sul</option>
+                                        <option value="RO">Rondônia</option>
+                                        <option value="RR">Roraima</option>
+                                        <option value="SC">Santa Catarina</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="SE">Sergipe</option>
+                                        <option value="TO">Tocantins</option>
+                                    </select>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label for="cep">CEP</label>
+                                    <input type="text" class="form-control" id="cep" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="cardNumber" class="form-label">Número do Cartão</label>
+                                    <input type="text" class="form-control" id="cardNumber">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="cardName" class="form-label">Nome do Cartão</label>
+                                    <input type="text" class="form-control" id="cardName">
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="expiryDate" class="form-label">Data de Validade</label>
+                                        <input type="text" class="form-control" id="expiryDate" placeholder="MM/AA">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="cvv" class="form-label">CVV</label>
+                                        <input type="text" class="form-control" id="cvv" placeholder="CVV">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="installments" class="form-label">Parcelamento</label>
+                                    <select class="form-select" id="installments">
+                                        <option selected>Selecione o número de parcelas</option>
+                                        <option value="1">1x R$ 5000,00</option>
+                                        <option value="2">2x R$ 2500,00</option>
+                                        <option value="3">3x R$ 1666,67</option>
+                                        <option value="4">4x R$ 1250,00</option>
+                                        <option value="5">5x R$ 1000,00</option>
+                                        <option value="6">6x R$ 833,33</option>
+                                    </select>
+                                </div>
+                                <a href="./finalizar-compra.html"><button type="button" class="btn btn-primary">Finalizar Compra</button></a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-body-tertiary text-center text-lg-start">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Contatos</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-body">Email</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-body">Telefone</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-body">Whatsapp</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-0">Mídias Sociais</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" class="text-body">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-body">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-body">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">JFK</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-body">Pacotes</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-body">Sobre Nós</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-body">Clientes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Copyright:
+            <a class="text-body" href="https://mdbootstrap.com/">JFKTour.com.br</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

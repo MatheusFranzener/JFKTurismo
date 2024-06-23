@@ -1,0 +1,21 @@
+body, html {
+    height: 100%;
+}
+
+.login-modal {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 15px;
+}
